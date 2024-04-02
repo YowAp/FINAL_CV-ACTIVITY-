@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Times New Roman:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', sans-serif;
+}
+
+body{
+	background: #c4c4c4;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.CV_wrapper{
+	display: flex;
+	width: 900px;
+	margin: 50px auto;
+	background: #fff;
+	padding: 10px;
+}
+
+.CV_wrapper .CV_left{
+	width: 45%;
+	background: #800000;
+}
+
+.CV_wrapper .CV_left .CV_image{
+	width: 100%;
+}
+
+.CV_wrapper .CV_left .CV_image img{
+	width: 100%;
+	display: block;
+}
+
+.CV_wrapper .CV_title{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+
+.CV_wrapper .CV_left .CV_info{
+	color: #cc6666;
+}
+
+.CV_wrapper .CV_left .CV_bottom{
+	padding: 20px 30px;
+}
+
+.CV_wrapper .CV_item{
+	padding: 20px 0;
+	border-bottom: 1px solid #cb4154;
+}
+
+.CV_wrapper  .CV_item:last-child{
+	border-bottom: 0;
+}
+
+.CV_wrapper .CV_left .CV_namerole{
+	display: none;
+}
+
+.CV_wrapper .CV_namerole .name{
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+
+.CV_wrapper .CV_left .CV_namerole .role{
+	color: #cc6666;
+}
+
+.CV_wrapper .CV_left .CV_contact .CV_info:last-child{
+	 margin-top: 10px;
+}
+
+.CV_wrapper .CV_left .CV_contact .CV_subtitle{
+	color: #fff;
+	margin-bottom: 2px;
+}
+
+.CV_wrapper .CV_left .CV_skills .skills_list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.CV_wrapper .CV_left .CV_skills .skills_list .skills_bar p{
+	position: relative;
+	width: 125px;
+    height: 20px;
+    background: #fff;
+}
+
+.CV_wrapper .CV_left .CV_skills .skills_list .skills_bar p span{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #cc6666;
+	width: 100%;
+	height: 100%;
+}
+
+.CV_wrapper .CV_right{
+	width: 65%;
+	padding: 20px 40px;
+	color: #26252d;
+}
+
+.CV_wrapper .CV_right .CV_namerole .name{
+	color: #26252d;
+	font-size: 32px;
+}
+
+.CV_wrapper .CV_right .CV_namerole .role{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.CV_wrapper .CV_right .CV_item .CV_title{
+	color: #26252d;
+}
+
+.CV_wrapper .CV_right .CV_data{
+	display: flex;
+}
+
+.CV_wrapper .CV_right .CV_data .year{
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+
+.CV_wrapper .CV_right .CV_data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+
+.CV_wrapper .CV_right .CV_data:last-child .year:after{
+	display: none;
+}
+
+.CV_wrapper .CV_right .resmue_interests .CV_info{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.CV_wrapper .CV_right .resmue_interests {
+	font-size: 38px;
+	color: #cc6666;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+	.CV_wrapper .CV_right .CV_namerole{
+		display: none;
+	}
+	.CV_wrapper .CV_left .CV_namerole{
+		display: block;
+	}
+	.CV_wrapper{
+		width: 95%;
+		margin: 10px auto;
+		flex-direction: column;
+	}
+	.CV_wrapper .CV_left,
+	.CV_wrapper .CV_right{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 424px){
+	.CV_wrapper .CV_right{
+		padding: 20px 30px;
+	}
+	.CV_wrapper .CV_right .CV_data{
+		flex-direction: column;
+	}
+	.CV_wrapper .CV_right .CV_data .year{
+		padding: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		color: #cc6666;
+	}
+	.CV_wrapper .CV_right .CV_data .year:before,
+	.CV_wrapper .CV_right .CV_data .year:after{
+		display: none;
+	}
+	.CV_wrapper .CV_right .CV_data .content{
+		width: 100%;
+		padding: 0;
+	}
+	.CV_wrapper .CV_right .resmue_interests{
+		font-size: 24px;
+	}
+}
